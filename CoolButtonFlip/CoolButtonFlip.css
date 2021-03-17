@@ -1,0 +1,64 @@
+body{
+    background: brown;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+#coolButton{
+    height: 10rem;
+    width: 20rem;
+    border-width: 20px;
+    border-top-color:white;
+    border-bottom-color: violet;
+    background-color: chartreuse;
+    color: chocolate;
+    font-family: "Roboto",sans-serif;
+    font-size: 4rem;
+    border-radius:4rem 4rem 4rem .2rem;
+}
+
+#wrapper{
+    margin-top: 10%;
+    flex-shrink: 2;
+    padding: 50px 50px;
+}
+#wrapper:hover,
+#coolButton:focus{
+    animation-name: flip;
+    animation-duration: 1s;
+    opacity: .75;
+    outline: none;
+}
+
+@keyframes flip{
+    0%{
+        transform: translate(70px, -35px);
+    }
+    6.25%{
+        transform: rotate(-22.5deg) translate(55px, -27px);
+    }
+    12.5%{
+        transform: rotate(-45deg) translate(43px, -23px);
+    }
+    25%{
+        transform: rotate(-90deg) translate(35px, -16px);
+    }
+    37.5%{
+        transform: rotate(-135deg);
+    }
+    50%{
+        transform: rotate(-180deg);
+    }
+    62.5%{
+        transform: rotate(-225deg);
+    }
+    75%{
+        transform: rotate(-270deg);
+    }
+    87.5%{
+        transform: rotate(-315deg);
+    }
+    100%{
+        transform: rotate(-360deg);
+    }
+}
